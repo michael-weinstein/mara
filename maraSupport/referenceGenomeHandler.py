@@ -130,6 +130,7 @@ def makeGenomeCoordinateTable(referenceGenome:ReferenceGenome, aliasTable:dict=N
             genomeCoordinateTable[identifier] = coordinates
     return genomeCoordinateTable
 
+genomeCoordinateTable = makeGenomeCoordinateTable(ReferenceGenome())
 
 if __name__ == "__main__":
     reference = ReferenceGenome()
