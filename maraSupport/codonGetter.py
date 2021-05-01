@@ -11,21 +11,7 @@ aliasTable = referenceGenomeHandler.getAliasTable()
 genomeCoordinateTable = referenceGenomeHandler.genomeCoordinateTable
 
 
-class RefAltPair:
 
-    def __init__(self, ref, alt):
-        self.ref = ref
-        self.alt = alt
-
-
-class PotentialAlternativeSequence:
-
-    def __init__(self, start:int, end:int, aminoAcids:RefAltPair, codons:RefAltPair, potentialMismatchMatrix:list):
-        self.start = start
-        self.end = end
-        self.aminoAcids = aminoAcids
-        self.codons = codons
-        self.potentialMismatchMatrix = potentialMismatchMatrix
 
 
 
@@ -56,7 +42,7 @@ def getGenomicPositionFromCodon(gene:str, codon:int):
     return codonStart
 
 
-def getCodonRefSeq(gene:str, codon:int, genomeSequence:str):
+def getCodonRefSeq(gene:str, codon:int, genomeSequence:str=getGenomeSequence()):
     codonStart = getGenomicPositionFromCodon(gene, codon)
     codonEnd = codonStart + 3
     return genomeSequence[codonStart:codonEnd]

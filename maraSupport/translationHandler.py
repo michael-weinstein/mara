@@ -76,9 +76,9 @@ def findLikeliestSubstitution(referenceCodon:str, alternateAminoAcid:str):
                 potentialForMismatch = True
                 break
         potentialMismatchSiteMatrix.append(potentialForMismatch)
-    return potentialAlternativeCodons, potentialMismatchSiteMatrix
+    return potentialAlternativeCodons, potentialMismatchSiteMatrix, alternativeCharacterizations
 
 
 if __name__ == "__main__":
-    altCodons, mismatchMatrix = findLikeliestSubstitution("GAT", "G")
+    mostLikelyAltCodon, mostLikelyMismatchMatrix, allAlternativeCodons = findLikeliestSubstitution("GAT", "G")
     print("something")
