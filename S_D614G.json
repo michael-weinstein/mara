@@ -1,0 +1,91 @@
+{
+  "best": [
+    {
+      "codon start": 23401,
+      "codon end": 23404,
+      "amino acids": {
+        "ref": "D",
+        "alt": "G"
+      },
+      "codons": {
+        "ref": "GAT",
+        "alt": "GGT"
+      },
+      "potential mismatch sites": [
+        23402
+      ],
+      "potential mismatch matrix": [
+        false,
+        true,
+        false
+      ]
+    }
+  ],
+  "other": {
+    "2": [
+      {
+        "codon start": 23401,
+        "codon end": 23404,
+        "amino acids": {
+          "ref": "D",
+          "alt": "G"
+        },
+        "codons": {
+          "ref": "GAT",
+          "alt": "GGA"
+        },
+        "potential mismatch sites": [
+          23402,
+          23403
+        ],
+        "potential mismatch matrix": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "codon start": 23401,
+        "codon end": 23404,
+        "amino acids": {
+          "ref": "D",
+          "alt": "G"
+        },
+        "codons": {
+          "ref": "GAT",
+          "alt": "GGC"
+        },
+        "potential mismatch sites": [
+          23402,
+          23403
+        ],
+        "potential mismatch matrix": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "codon start": 23401,
+        "codon end": 23404,
+        "amino acids": {
+          "ref": "D",
+          "alt": "G"
+        },
+        "codons": {
+          "ref": "GAT",
+          "alt": "GGG"
+        },
+        "potential mismatch sites": [
+          23402,
+          23403
+        ],
+        "potential mismatch matrix": [
+          false,
+          true,
+          true
+        ]
+      }
+    ]
+  }
+}
